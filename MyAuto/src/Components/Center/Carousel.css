@@ -1,0 +1,78 @@
+.container {
+  position: relative;
+  width: 182px;
+  height: 144px;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.overlay-row {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 2px;
+  width: 90%;
+  height: 2px;
+  background-color: transparent;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.hovered .line {
+  background-color: white;
+}
+
+.hovered .line.red {
+  background-color: #fd4100;
+}
+
+.line-selected {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 4px;
+  width: 80%;
+  height: 2px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 960px) {
+  .container {
+    height: 256px;
+    width: 90svw;
+  }
+  .line {
+    margin-left: 8px;
+  }
+}

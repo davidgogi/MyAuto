@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MyAuto-ReactApp/static/css/main.8dcbce9c.css",
+    "main.js": "/MyAuto-ReactApp/static/js/main.081e580f.js",
+    "index.html": "/MyAuto-ReactApp/index.html",
+    "main.8dcbce9c.css.map": "/MyAuto-ReactApp/static/css/main.8dcbce9c.css.map",
+    "main.081e580f.js.map": "/MyAuto-ReactApp/static/js/main.081e580f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dcbce9c.css",
+    "static/js/main.081e580f.js"
+  ]
+}

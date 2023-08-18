@@ -1,0 +1,159 @@
+.header-wrapper {
+  cursor: default;
+  width: 100lvw;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background: #ffffff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 4px 20px rgba(164, 174, 193, 0.4);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content > * {
+  cursor: pointer;
+}
+
+.myauto-logo {
+  margin-right: 25lvw;
+}
+
+.sell-logo {
+  margin-top: 3px;
+}
+
+.sell-text {
+  margin-bottom: 1px;
+  margin-right: 1px;
+}
+
+.tnet-logo {
+  margin-left: 2lvw;
+  border-radius: 50%;
+  border: 1px solid #c2c9d8;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  padding: 7px;
+  transition: border 0.3s ease;
+}
+
+.more-logo {
+  margin-left: 2lvw;
+  transition: fill 0.3s ease;
+}
+
+.login-logo {
+  margin-left: 2px;
+}
+
+.login-text {
+  margin-bottom: 2px;
+}
+
+.login-both {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sell-both {
+  margin-left: 15lvw;
+  color: #272a37;
+  width: 56px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 8px 0px 6px;
+  border: 1px solid #c2c9d8;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.login-both {
+  margin-left: 2lvw;
+  background-color: #f7f8fa;
+
+  color: #272a37;
+  width: 64px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 8px 0px 6px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.login-both:hover {
+  background-color: #e4e7ed;
+}
+
+.sell-both:hover {
+  background-color: #e4e7ed;
+}
+
+.more-logo:hover {
+  fill: #fd4100;
+}
+
+.tnet-logo:hover {
+  border: 1px solid #3c74ff;
+}
+
+@media screen and (max-width: 960px) {
+  .header-wrapper {
+    height: 60px;
+    position: relative;
+    z-index: 998;
+  }
+
+  .tnet-logo:hover {
+    border: none;
+  }
+
+  .header-content {
+    margin: 0px 16px;
+    justify-content: space-between;
+  }
+
+  .header-content > * {
+    padding-inline: 1rem;
+  }
+
+  .myauto-logo {
+    margin-right: 0px;
+  }
+
+  .sell-both {
+    display: none;
+  }
+
+  .login-both {
+    display: none;
+  }
+
+  .tnet-logo {
+    margin-left: 0px;
+    padding: 0px;
+    width: 20px;
+    border: none;
+  }
+
+  .more-logo {
+    margin-left: 0px;
+  }
+}

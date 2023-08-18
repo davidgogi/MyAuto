@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.period-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px 12px 12px;
+  background: transparent;
+  border: 1px solid #c2c9d8;
+  border-radius: 8px;
+  cursor: pointer;
+  width: auto;
+}
+
+.period-container:hover {
+  border-color: #272a37;
+}
+
+.period-container.open {
+  border-color: #272a37; /* Set the border color to black when open */
+}
+
+.period-container button {
+  border: none;
+  background-color: transparent;
+  transition: transform 0.2s ease-in; /* Add transition property */
+}
+
+.period-container button.rotate {
+  transform: rotate(180deg); /* Apply rotation to the chevron */
+}
+
+.period-container button:focus {
+  outline: none;
+}
+
+.period-choice {
+  color: #454857;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.period-dropdown-options label {
+  cursor: pointer;
+  color: #6f7383;
+  font-style: normal;
+}
+
+.period-dropdown-options {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c2c9d8;
+  border-radius: 8px;
+  margin: 12px 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 8px 0;
+  box-shadow: 0px 4px 20px rgba(164, 174, 193, 0.4);
+  width: 120px;
+}
+
+.period-dropdown-container {
+  position: relative;
+  z-index: 11;
+}
+
+.period-dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  /* Other styling properties */
+}
+
+.dropdown-options label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.period-option {
+  padding: 8px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 16px;
+
+  font-size: 14px;
+}
+
+.period-option:hover {
+  color: #272a37;
+  background: #f2f3f6;
+}

@@ -1,0 +1,446 @@
+.product-card {
+  height: 172px;
+  max-width: 780px;
+  width: auto;
+  border-radius: 14px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 12px;
+}
+
+.card-info {
+  margin-left: 2px;
+  height: 85%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS Styles */
+.card-info header {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  height: 25%;
+}
+
+.long-info {
+  height: 100%;
+  width: 78%;
+  display: flex;
+  flex-direction: row;
+}
+
+.long-info > * {
+  padding-right: 4px;
+}
+
+.years-number {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #8c929b;
+}
+
+.long-info > p:not(:last-child) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #272a37;
+}
+
+.short-info {
+  height: 100%;
+  width: 24%;
+}
+
+.customs-check {
+  color: #1eb676;
+}
+
+.customs-uncheck {
+  color: #ff3b30;
+}
+
+.customs-check,
+.customs-uncheck {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.customs-check > span,
+.customs-uncheck > span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  padding-left: 4px;
+}
+
+.product-info {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+aside.left {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-evenly;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1b1d25;
+}
+
+aside.left * > svg {
+  padding-right: 8px;
+}
+
+aside.left > * {
+  display: flex;
+  align-items: center;
+}
+
+.product-info center {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1b1d25;
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.product-info center > * {
+  display: flex;
+  align-items: center;
+}
+
+.product-info center * > svg {
+  padding-right: 8px;
+}
+
+aside.right {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.product-price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #272a37;
+  padding-right: 12px;
+}
+
+.card-info footer {
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .views-time p {
+  display: inline;
+}
+
+footer .views-time {
+  width: 80%;
+  display: flex;
+  align-items: flex-end;
+}
+.dot {
+  padding-inline: 8px;
+}
+
+footer .right-icons {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+footer .right-icons > * {
+  fill: #6f7383;
+  height: 16px;
+  width: 16px;
+}
+footer .right-icons > * {
+  margin-left: 16px;
+
+}
+
+.heart:hover {
+  fill: #fd4100;
+}
+
+.comment:hover {
+  fill: #1eb676;
+}
+
+.eye:hover {
+  fill: rgb(243, 192, 53);
+}
+
+.card-info footer p,
+.card-info header p,
+.left p,
+.product-info center p,
+.right p {
+  margin: 0px;
+}
+
+.pagination-bar {
+  width: auto;
+  max-width: 804px;
+  background-color: #ffffff;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.pagination-bar > * {
+  padding-inline: 16px;
+}
+
+.pagination-bar button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #8c929b;
+  font-size: 12px;
+}
+
+.for-rent-icon {
+  background-color: #1eb676;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 13px;
+  height: 20px;
+  font-weight: 500;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info footer * {
+  color: #6f7383;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.pagination-bar button.active {
+  color: #fd4100;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lari-btn,
+.dollar-btn {
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  fill: #8c929b;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.3s ease;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 46px;
+  border: 1px solid #e2e5eb;
+}
+
+.button-box .selected {
+  background-color: #272a37;
+  fill: #ffffff;
+  margin: 0px -1px -1px;
+}
+
+.all-prod_options {
+  margin-top: 12px;
+}
+
+.not-found {
+  margin-block: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.not-found > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #272a37;
+  margin-block: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.not-found > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 8px;
+  border: 1px solid #fd4100;
+  color: #ffffff;
+  font-weight: 500;
+  width: 120px;
+  height: 54px;
+
+  /* primary/orange 800 */
+
+  background: #fd4100;
+  border-radius: 10px;
+}
+
+.not-found > button:hover {
+  background-color: #ca3400;
+  border: 1px solid #ca3400;
+}
+
+button {
+  transition: 0.3s all;
+}
+
+@media (max-width: 960px) {
+  .product-card {
+    height: 451px;
+    border-radius: 16px;
+    width: 100lvw;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .card-photo {
+    height: 256px;
+    width: 90lvw;
+    border-radius: 16px;
+    margin-top: 20px;
+  }
+
+  .card-info {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .card-info header {
+    padding-inline: 5%;
+  }
+
+  .car-model-del {
+    display: none;
+  }
+
+  .long-info > p:not(:last-child) {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .years-number {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .product-info {
+    padding-inline: 5%;
+  }
+
+  .card-info footer {
+    padding-inline: 5%;
+  }
+
+  footer .right-icons {
+    width: 30%;
+  }
+
+  .pagination-bar {
+    width: auto;
+    width: 100lvw;
+    background-color: #ffffff;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 0px;
+  }
+}
+
+/* This media query is used for: iPhone 11 and iPhone XR
+
+ */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .lari-btn svg,
+  .dollar-btn svg {
+    transform: scale(4);
+  }
+}
+
+/* This media query is used for: iPhone 11 Pro Max and iPhone Xs Max*/
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .lari-btn svg,
+  .dollar-btn svg {
+    transform: scale(6);
+  }
+}
+
+/* This media query is used for: iPhone 13, iPhone 12 and iPhone 12 Pro */
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .lari-btn svg,
+  .dollar-btn svg {
+    transform: scale(6);
+  }
+}
+/* This media query is used for: iPhone 13 Pro Max and iPhone 12 Pro Max*/
+
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  .lari-btn svg,
+  .dollar-btn svg {
+    transform: scale(6);
+  }
+}
+
+/*This media query is used for: iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X*/
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .lari-btn svg,
+  .dollar-btn svg {
+    transform: scale(6);
+  }
+}

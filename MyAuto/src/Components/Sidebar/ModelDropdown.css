@@ -1,0 +1,238 @@
+.model-dropdown {
+  display: flex;
+  flex-direction: column;
+  max-height: 306px;
+  overflow-y: auto;
+}
+
+.model-dropdown label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.model-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px 12px 12px;
+  background: #ffffff;
+  border: 1px solid #d8dbe2;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 18px; /* Add a fixed height */
+}
+
+.model-container:hover {
+  border-color: #272a37;
+}
+
+.model-container.open {
+  border-color: #272a37;
+  cursor: text;
+}
+
+.model-container input {
+  flex: 1;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.model-container.open input {
+  cursor: text;
+}
+
+.model-container button {
+  border: none;
+  background-color: transparent;
+  transition: transform 0.2s ease-in; /* Add transition property */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.model-container button.rotate {
+  transform: rotate(180deg); /* Apply rotation to the chevron */
+}
+
+.model-container button.rotate-x {
+  transform: rotate(-180deg); /* Apply rotation to the X mark */
+}
+
+.model-container button.rotate-x:hover {
+  background-color: #c2c9d848;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.model-dropdown-options input[type="checkbox"] {
+  width: 16px;
+  display: none;
+}
+
+
+.custom-checkbox-unchecked {
+  margin-right: 1lvw;
+  width: 16px;
+  min-width: 16px;
+
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #d8dbe2;
+  cursor: pointer;
+  /* transition: opacity 0.3s ease-in-out; */
+}
+.custom-checkbox-checked {
+  margin-right: 1lvw;
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #fd4100;
+  background-color: #fd4100;
+  cursor: pointer;
+  color: #ffffff;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  /* opacity: 1;
+      transition: opacity 0.3s ease-in-out; */
+}
+
+.model-dropdown-options label {
+  cursor: pointer;
+  color: #6f7383;
+  font-style: normal;
+  transition: color 0.3s ease; /* Add transition property */
+}
+
+.model-dropdown-options label:hover {
+  color: #272a37;
+}
+
+/* Chrome, Edge and Safari */
+.model-dropdown-options::-webkit-scrollbar {
+  width: 4px;
+}
+
+.model-dropdown-options::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #272a37;
+}
+
+@supports (scrollbar-width: thin) {
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #272a37;
+  }
+}
+
+.model-dropdown {
+  border: 1px solid #d8dbe2;
+  background-color: #ffffff;
+
+  border-radius: 8px;
+  margin: 12px 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0px 4px 20px rgba(164, 174, 193, 0.4);
+}
+
+.model-dropdown-options {
+  display: flex;
+  flex-direction: column;
+  max-height: 306px;
+  overflow-y: auto;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  cursor: pointer;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.model-dropdown-container {
+  position: relative;
+  z-index: 12;
+}
+
+.model-dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  /* Other styling properties */
+}
+
+.model-dropdown-options label {
+  padding-bottom: 8px;
+}
+
+.model-dropdown-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 2px 16px;
+  background: #ffffff;
+  border-top: 1px solid #d8dbe2;
+  height: fit-content;
+}
+
+.model-close-button {
+  background: #fd4100;
+  border-radius: 6px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  height: 28px;
+  padding: 0px 8px;
+}
+
+.model-container.dark-font input::placeholder {
+  color: #272a37;
+}
+
+.model-clear-button {
+  background-color: transparent;
+  border: none;
+  color: #6f7383;
+  cursor: pointer;
+}
+
+.group-name {
+  display: flex;
+  align-items: center;
+}
+
+.group-text {
+  color: #272a37;
+}
+
+.grey-hor-line {
+  height: 1px;
+  background-color: #e9e9f0;
+  border: none;
+  border-radius: 8px;
+  flex-grow: 0.69;
+}
+
+.man-name-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+}

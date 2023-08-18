@@ -1,0 +1,24 @@
+.chevron-icon {
+  margin-right: 12px;
+}
+
+.model-group-chevron {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.model-group-chevron span {
+  transition: transform 0.2s ease-in; /* Add transition property */
+}
+
+.grouped-dropdown-content {
+  border-left: 1px solid #d8dbe2;
+  padding-left: 16px;
+  margin-left: 8px;
+}
+
+.chevron-icon.rotate {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,214 @@
+
+.sale-rent-dropdown {
+  display: flex;
+  flex-direction: column;
+  max-height: 306px;
+  overflow-y: auto;
+}
+
+.sale-rent-dropdown label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.sale-rent-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px 12px 12px;
+  background: #ffffff;
+  border: 1px solid #d8dbe2;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 18px; /* Add a fixed height */
+}
+
+.sale-rent-container:hover {
+  border-color: #272a37;
+}
+
+.sale-rent-container.open {
+  border-color: #272a37; /* Set the border color to black when open */
+}
+
+.sale-rent-container input {
+  flex: 1;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: auto;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.sale-rent-container button {
+  border: none;
+  background-color: transparent;
+  transition: transform 0.2s ease-in; /* Add transition property */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sale-rent-container button.rotate {
+  transform: rotate(180deg); /* Apply rotation to the chevron */
+}
+
+.sale-rent-container button.rotate-x {
+  transform: rotate(-180deg); /* Apply rotation to the X mark */
+}
+
+.sale-rent-container button.rotate-x:hover {
+  background-color: #c2c9d848;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.sale-rent-dropdown-options input[type="checkbox"] {
+  display: none;
+}
+
+
+.custom-checkbox-unchecked,
+.custom-checkbox-checked {
+  margin-right: 1lvw;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #d8dbe2;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease; /* Add a transition to all properties */
+}
+
+.custom-checkbox-checked {
+  border-color: #fd4100;
+  background-color: #fd4100;
+  color: #ffffff;
+}
+
+.custom-checkbox-checked .checkbox-icon {
+  height: 10px;
+  width: 10px;
+  opacity: 1; /* Start with the icon visible */
+}
+
+.custom-checkbox-unchecked .checkbox-icon {
+  height: 0;
+  width: 0;
+  opacity: 0; /* Start with the icon hidden */
+}
+
+.sale-rent-dropdown-options label {
+  cursor: pointer;
+  color: #6f7383;
+  font-style: normal;
+  transition: color 0.3s ease; /* Add transition property */
+
+}
+
+
+
+.sale-rent-dropdown-options label:hover {
+  color: #272a37;
+}
+
+
+@supports (scrollbar-width: thin) {
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #272a37;
+  }
+}
+/* Chrome, Edge and Safari */
+.sale-rent-dropdown-options::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sale-rent-dropdown-options::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #272a37;
+}
+
+.sale-rent-dropdown {
+  border: 1px solid #d8dbe2;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0px 4px 20px rgba(164, 174, 193, 0.4);
+}
+
+.sale-rent-dropdown-container {
+  position: relative;
+  z-index: 14;
+}
+
+.sale-rent-dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+}
+
+.sale-rent-dropdown-options {
+  display: flex;
+  flex-direction: column;
+  max-height: 306px;
+  overflow-y: auto;
+  padding-left: 16px;
+  padding-top: 8px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.sale-rent-dropdown-options label {
+  padding-bottom: 8px;
+}
+
+.sale-rent-dropdown-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 2px 16px;
+  background: #ffffff;
+  border-top: 1px solid #d8dbe2;
+  height: fit-content;
+}
+
+.sale-rent-close-button {
+  background: #fd4100;
+  border-radius: 6px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  height: 28px;
+  padding: 0px 8px;
+}
+
+.sale-rent-container.dark-font input::placeholder {
+  color: #272a37;
+}
+
+.sale-rent-clear-button {
+  background-color: transparent;
+  border: none;
+  color: #6f7383;
+  cursor: pointer;
+}
+
+
+  

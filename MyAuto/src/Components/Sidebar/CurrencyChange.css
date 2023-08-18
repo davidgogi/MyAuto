@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  justify-content: space-between;
+  margin: 20px 9px 8px;
+  cursor: default;
+}
+
+.currency-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.lari-btn,
+.dollar-btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  fill: #8c929b;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: auto;
+  border: 1px solid #e2e5eb;
+}
+
+.button-box .selected {
+  background-color: #272a37;
+  fill: #ffffff;
+  margin: 0px -1px -1px;
+}
+
+.currency-input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #e2e5eb;
+  color: #5e697d;
+  height: 1.2rem;
+  width: 73px;
+  border-radius: 8px;
+}
+
+.from-to-ratio {
+  color: #5e697d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.from-to-ratio > * {
+  margin: 8px;
+}
+
+@media screen and (max-width: 960px) {
+  .currency-main {
+    width: 93lvw;
+  }
+
+  .header {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .currency-input {
+    width: 40lvw;
+  }
+}
